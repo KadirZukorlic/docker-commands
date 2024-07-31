@@ -9,13 +9,19 @@
 - `docker images` - List Docker images
 - `docker run [options] [image-name]` - Run a container
   - Example: `docker run -d -p 80:80 nginx`
-  
+
 - `docker ps` - List running containers
 - `docker ps -a` - List all containers (including stopped ones)
+- `docker create busybox echo <hey there>` - Creating a container with echo message
+- `docker start <container id> -a` - `-a` to get output
 - `docker stop [container-id]` - Stop a container
+- `docker kill <container-id>` - Kills a container
+- `docker logs <container-id>` - print all the commands 
 - `docker start [container-id]` - Start a stopped container
 - `docker rm [container-id]` - Remove a container
 - `docker rmi [image-id]` - Remove an image
+
+- `docker exec -it <container-id> <docker container for example: (redis-cli)>` - Allows us if we started redis server with `docker run redis server`, this execute command allows us to run multiple containers in different terminals.
 
 ## Docker Volumes
 - `docker volume create [volume-name]` - Create a volume
