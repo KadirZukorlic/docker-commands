@@ -5,9 +5,11 @@
 - `docker --version` - Check Docker version
 - `docker pull [image-name]` - Pull an image from Docker Hub
   - Example: `docker pull nginx`
+
 - `docker images` - List Docker images
 - `docker run [options] [image-name]` - Run a container
   - Example: `docker run -d -p 80:80 nginx`
+  
 - `docker ps` - List running containers
 - `docker ps -a` - List all containers (including stopped ones)
 - `docker stop [container-id]` - Stop a container
